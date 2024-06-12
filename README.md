@@ -1,7 +1,8 @@
 # ParkingLot Smart Contract
 The ParkingLot smart contract manages a parking lot with a fixed number of parking spaces.
 It allows cars to be parked and removed by the owner.
-![image](https://github.com/gurleenkaur0703/Parking/assets/170515862/2caea124-0ac4-4be5-abbf-bda36e97b9b9)
+![image](https://github.com/gurleenkaur0703/Parking/assets/170515862/c4b90144-ff9e-41bd-9a74-9aa9f82bcdfb)
+
 
 ## Contract Description:
 
