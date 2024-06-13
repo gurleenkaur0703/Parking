@@ -53,8 +53,7 @@ A view function that asserts that the total number of cars (totalCars) is within
 ### Executing program
 • Open Remix IDE in your browser. Create a New File with .sol extention. Copy and paste the following code into the file:
 ```
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+
 
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
