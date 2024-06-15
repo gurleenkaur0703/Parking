@@ -3,7 +3,7 @@ pragma solidity ^0.8.9;
 
 contract ParkingLot{
     address public owner;
-    uint public totalSpaces=3;
+    uint public totalSpaces=5;
     uint public totalCars=0;
 
     constructor(){
@@ -20,7 +20,7 @@ contract ParkingLot{
 
     function parkCar(address _carAddress) public onlyOwner{
         require(totalCars<3,"no parking space available");
-        for(uint i=1;i<=3;i++){
+        for(uint i=1;i<=5;i++){
             if(spaceAvailability[i]==false){
                 spaceAvailability[i]=true;
                 carAtSpace[i]=_carAddress;
@@ -35,7 +35,7 @@ contract ParkingLot{
         uint spaceOfCar=1;
         bool carFound=false;
 
-        for(uint i=1;i<=3;i++){
+        for(uint i=1;i<=5;i++){
             if(carAtSpace[i]==_carAddress){
                 spaceOfCar=i;
                 carFound=true;
@@ -53,6 +53,6 @@ contract ParkingLot{
     }
 
     function assertAvailabilty() public view{
-        assert(totalCars>=0 && totalCars<=3);
+        assert(totalCars>=0 && totalCars<=5);
     }
 }
