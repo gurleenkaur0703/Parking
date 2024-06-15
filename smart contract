@@ -19,7 +19,7 @@ contract ParkingLot{
     mapping(uint=>address) public carAtSpace;
 
     function parkCar(address _carAddress) public onlyOwner{
-        require(totalCars<3,"no parking space available");
+        require(totalCars<5,"no parking space available");
         for(uint i=1;i<=5;i++){
             if(spaceAvailability[i]==false){
                 spaceAvailability[i]=true;
